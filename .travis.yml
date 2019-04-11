@@ -1,0 +1,13 @@
+language: java
+jdk:
+  - oraclejdk8
+# git strips the wrapper jar file so we have to force its download during the build
+install:
+  - mvn -N io.takari:maven:wrapper
+  - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  
+deploy:
+  provider: heroku
+  app: algamoney-api
+  api_key:
+    secure: "a68ec676-80fb-434e-a195-ade9294def10"
