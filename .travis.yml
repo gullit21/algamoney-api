@@ -8,6 +8,6 @@ install:
   
 deploy:
   provider: heroku
-  app: algamoney-api
+  app: algamoney-gti-api
   api_key:
     secure: "a68ec676-80fb-434e-a195-ade9294def10"
