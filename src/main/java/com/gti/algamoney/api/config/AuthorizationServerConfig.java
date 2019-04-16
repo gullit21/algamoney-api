@@ -53,7 +53,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 		endpoints
 			.tokenStore(tokenStore())
 			.tokenEnhancer(tokenEnhancerChain)
-			.accessTokenConverter(accessTokenConverter()) // necessário inserção para utilizar o JWT
+//			.accessTokenConverter(accessTokenConverter()) // necessário inserção para utilizar o JWT
 			.reuseRefreshTokens(false) // forcar o reenvio de um novo refresh_token
 			.authenticationManager(authenticationManager);
 	}
