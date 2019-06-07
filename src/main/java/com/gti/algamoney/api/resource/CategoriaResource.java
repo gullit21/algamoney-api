@@ -50,7 +50,7 @@ public class CategoriaResource {
 	@PreAuthorize("hasAuthority('ROLE_PESQUISAR_CATEGORIA') and #oauth2.hasScope('read')") // scope identificado no AuthorizationServerConfig. O scope eh do cliente e nao do usuario
 	public ResponseEntity<Categoria> buscar(@PathVariable Long codigo) {
 		Categoria categoria = repository.findOne(codigo);
-		return categoria != null ? ResponseEntity.ok(categoria) : ResponseEntity.notFound().build();
+		return categoria != null ? ResponseEntity.ok(categoria) : ResponseEntity.notFound().build(); // 3.7 - Retornar 404 caso não exista categoria
 	}
 
 //	@GetMapping
