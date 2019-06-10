@@ -23,3 +23,7 @@ API
 10 - Aprofundar conhecimento sobre o MetaModel do JPA e utilizar
 
 11 - Adicionar paginação (consultar -> LancamentoRepositoryImpl)
+
+12 - Adicionar segurança na API (Spring Security, OAuth e JWT) com as classes ResourceServerConfig, AuthorizationServerConfig, RefreshTokenPostProcessor, RefreshTokenPreProcessorFilter, CorsFilter, Usuario, Permissao, AppUserDetailsService, TokenResource, CustomTokenEnhancer, UsuarioSistema, BasicSecurityConfig (apos Profile)
+
+13 - Configurar "Profile" prod e dev, criar classe de propriedade "App"ApiProperty (spring-boot configurator-processor)
